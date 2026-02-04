@@ -8,88 +8,70 @@
   </head>
      
   <body>
-    <meta name="viewport" content="width=device-width, initial-scale=10.0"> 
-    <nav>
-    <div class="nav_bar" >
-        
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">AUTOBIOGRAPHY</a> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <nav>
+        <div class="nav_bar">
+            <div class="flex-item" style="flex: 1">
+                <a href="#content">AUTOBIOGRAPHY</a>
+            </div>
+            <div class="flex-item" style="flex: 1">
+                <a href="#content">SKILLS</a>
+            </div>
+            <div class="flex-item" style="flex: 1">
+                <a href="#projects">PROJECTS</a>
+            </div>
+            <div class="flex-item" style="flex: 1">
+                <a href="#content">ABOUT</a>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">SKILLS</a>
-        </div> 
-        <div class="flex-item" style="flex: 1">
-            <a href="/js/">PROJECTS</a> 
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">ABOUT</a>
-        </div>
-    </div>
-    </nav>
+        </nav>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
+    <div class="flex-container" id="featured-photo">
+            <div class="flex-item" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                <img src="feature.jpg" alt="Juzhel Aidyl Nipas" loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cove; border-radius: 10px;">
+            </div>
         </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>        
-    </div>
-    <div class="footer"><p>Footer</p></div>
-  </body>
 
+        <div class="flex-container" id="content">
+            <div class="flex-item" style="flex: 1; padding: 20px;" id="#content">
+                <h2>Technical & Management Skills</h2>
+                <ul>
+                    <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript (ES6+), JavaFX, R</li>
+                    <li><strong>Design:</strong> Responsive Design, CSS Grid, Flexbox, Figma</li>
+                    <li><strong>Tools:</strong> Git, Webpack, Chrome DevTools, Cross-browser testing</li>
+                </ul>
+            </div>
+            <div class="flex-item" style="flex: 1; padding: 20px;" id="#content">
+                <h2>Autobiography</h2>
+                <p>Meet Juzhel Aidyl T. Nipas, a Bachelor of Science in Computer Science student at University of the Philippines - Los Baños with 3 years of experience in frontend development. My academic projects include building responsive web applications and implementing modern UI/UX patterns. Passionate about creating accessible, performant web experiences, I've contributed to open-source projects and maintain a strong focus on clean code practices. My technical background combined with project management experience makes me well-suited for collaborative engineering environments.</p>
+            </div>
+        </div>
+
+        <div class="flex-container" id="projects">
+            <div class="flex-item" style="flex: 1; padding: 15px;">
+                <h2>Project 1: Interior Furniture Set-Up and Delivery</h2>
+                <p>Developed a basic web page using HTML and CSS. Implemented the planner of furniture set-up and delivery options using JavaScript.</p>
+            </div>
+            <div class="flex-item" style="flex: 1; padding: 15px;">
+                <h2>Project 2: Mitigation Planner App</h2>
+                <p>Created a pollution reduction planner app using R. Implemented shiny library for user interface.</p>
+            </div>
+            <div class="flex-item" style="flex: 1; padding: 15px;">
+                <h2>Project 3: University Portal</h2>
+                <p>Built a responsive student portal using JavaFX with accessibility features. Integrated with university API for course registration.</p>
+            </div>
+        </div>
+
+        <div class="footer" id="#content">
+            <div class="footer-center">
+                <img src="logo.jpg" alt="Logo" loading="lazy" class="footer-logo">
+                <div>
+                    <p>Los Baños, Laguna | Contact: jtnipas@up.edu.ph</p>
+                    <p>Personal Website: juzhelaidyl.dev | Copyright © 2026</p>
+                    <p><a href="#top" style="color: white; text-decoration: underline;">Back to Top</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
