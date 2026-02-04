@@ -1,6 +1,6 @@
 .flex-container {
     display: flex;
-    border-style: solid;
+    border-style: inset;
     border-width: 5px;
     border-color: red;
     flex-direction: row;
@@ -8,21 +8,34 @@
 
 .nav_bar {
     display: flex;
-    border-style: solid;
+    grid-area: header;
+    border-style: inset;
     border-width: 5px;
+    border-radius: 15px;
     border-color: rgb(255, 0, 200);
+    height: 50px;
     flex-direction: row;
+    text-align: center;
+    align-items: center;
 }
 
 .flex-container2 {
     display: flex;
-    border-style: solid;
+    border-style: inset;
     border-width: 5px;
     border-color: rgb(0, 255, 51);
     flex-direction: row;
 }
 .flex-item {
-    border-style: solid;
+    border-style: inset;
     border-width: 2px;
     border-color: red;
+}
+
+.footer {
+  grid-area: footer;
+  border-style: inset;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
 }
